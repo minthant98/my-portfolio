@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Min Thant Tin - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Min Thant Tin
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          minthanttin@email.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +19788888888
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendation">Recommendation</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2023/01/16/00/43/man-7721387_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Min Thant Tin! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a mechanical engineer/ AI engineer with 5 years of experience in both design and automation process.
+            I have worked on designing the chucks and heat exchangers on various manufacturing industries. 
+            I am an avid user of IBM Watson Services and have started taking IBM AI developer course to change my career to become an AI Engineer.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+            <img src="https://theianext-0-labs-prod-misc-tools-us-east-0.labs.cognitiveclass.ai/user/minthantcass/files/download/?id=901401ad-c330-468f-b420-2ae3ffce49e5"/>
+            <h6>Node</h6>
+            <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://theianext-0-labs-prod-misc-tools-us-east-0.labs.cognitiveclass.ai/user/minthantcass/files/download/?id=ddb7a6c5-a2f0-4ad8-9fff-29bffc962ac8"/>
+            <h6>CSS3</h6>
+            <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://theianext-0-labs-prod-misc-tools-us-east-0.labs.cognitiveclass.ai/user/minthantcass/files/download/?id=b1acfd68-d551-4fae-8d29-3127528df2d5"/>
+            <h6>AutoCAD</h6>
+            <p>3 years experience</p>
+        </div>    
+
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Core Shafts & Chucks</h3>
+            <ul>
+              <li>Developed and designed pneumatic core shafts and chucks that are used in web converting technologies.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Railways Infrastructure</h3>
+            <ul>
+              <li>Designed infrasture plans and layouts for railways telecommunications</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Menu Website</h3>
+            <ul>
+              <li>Created a menu page for a cafe with the checkout page.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working alongside Min was always a pleasure. His ability to break down complex tasks into manageable pieces kept our team on track and motivated. 
+          He is collaborative, focused, and always willing to help others.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Min consistently exceeded expectations in every project. His attention to detail, proactive attitude, and commitment to learning make him an asset to any team. 
+          I’d highly recommend him for any challenging role.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Min brought a refreshing mix of creativity and discipline to our workflow. Whether tackling code, leading standups, or mentoring interns, he always delivered with professionalism and positivity. 
+          He’s a rising star.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center" >
+        Thank you for letting us know!
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
